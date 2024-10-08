@@ -18,3 +18,24 @@ Se você tem sugestões ou gostaria de contribuir com este projeto, sinta-se à 
 Agradecimentos
 
 Obrigado por visitar meu repositório! Fique à vontade para explorar o código e acompanhar meu progresso à medida que continuo a aprender e desenvolver novos projetos.
+
+My First HTML Website
+
+Welcome to my repository! This project is the result of my first experience creating a website using HTML and CSS. I'm excited to share this journey with you!
+About the Project
+
+In this website, I implemented a simple login interface that includes fields for username and password, along with options for registration and password recovery. The idea is to provide a basic authentication experience, allowing users to simulate a login process.
+Future Goals
+
+This project is just the beginning! My aim is to continue improving my web development skills and create more advanced and functional websites in the future. I am constantly learning and seeking to expand my knowledge in new technologies, such as JavaScript, front-end frameworks, and responsive design.
+Technologies Used
+
+    HTML
+    CSS
+
+How to Contribute
+
+If you have suggestions or would like to contribute to this project, feel free to open an issue or make a pull request. I'm always open to feedback and collaborations!
+Acknowledgments
+
+Thank you for visiting my repository! Feel free to explore the code and follow my progress as I continue to learn and develop new projects.
