@@ -1,0 +1,6 @@
+Projeto: Gerador de Senhas Seguras
+Funcionalidades:
+
+    Gerar senhas de diferentes comprimentos.
+    Incluir números, letras maiúsculas, letras minúsculas e símbolos especiais.
+    Opção para copiar a senha gerada diretamente para a área de transferência.
