@@ -1,6 +1,37 @@
-Projeto: Gerador de Senhas Seguras
-Funcionalidades:
+import random
+import string
+import pyperclip
 
-    Gerar senhas de diferentes comprimentos.
-    Incluir números, letras maiúsculas, letras minúsculas e símbolos especiais.
-    Opção para copiar a senha gerada diretamente para a área de transferência.
+def generate_password(length=12, include_uppercase=True, include_numbers=True, include_symbols=True):
+    characters = string.ascii_lowercase
+    if include_uppercase:
+        characters += string.ascii_uppercase
+    if include_numbers:
+        characters += string.digits
+    if include_symbols:
+        characters += string.punctuation
+
+    password = ''.join(random.choice(characters) for i in range(length))
+    return password
+
+def main():
+    print("Bem-vindo ao Gerador de Senhas Seguras!")
+
+    try:
+        length = int(input("Digite o comprimento da senha (padrão é 12): ") or 12)
+    except ValueError:
+        print("Entrada inválida, usando o comprimento padrão de 12.")
+        length = 12
+
+    include_uppercase = input("Incluir letras maiúsculas? (s/n): ").lower() == 's'
+    include_numbers = input("Incluir números? (s/n): ").lower() == 's'
+    include_symbols = input("Incluir símbolos? (s/n): ").lower() == 's'
+
+    password = generate_password(length, include_uppercase, include_numbers, include_symbols)
+    
+    print(f"Sua senha gerada é: {password}")
+    pyperclip.copy(password)
+    print("A senha foi copiada para a área de transferência!")
+
+if __name__ == "__main__":
+    main()
