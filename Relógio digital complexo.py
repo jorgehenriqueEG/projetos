@@ -3,10 +3,8 @@ from datetime import datetime
 import pytz
 import requests
 
-# Função para obter o alinhamento dos planetas (API fictícia)
 def get_planet_alignment():
     try:
-        # Substitua pela URL de uma API real de astronomia
         response = requests.get("https://starwalk.space/pt/news/what-is-planet-parade")
         if response.status_code == 200:
             data = response.json()
@@ -16,7 +14,6 @@ def get_planet_alignment():
     except Exception as e:
         return f"Erro: {e}"
 
-# Função para atualizar o relógio
 def update_clock():
     now_utc = datetime.now(pytz.utc)
     now_ny = now_utc.astimezone(pytz.timezone("America/New_York"))
@@ -30,7 +27,6 @@ def update_clock():
 
     root.after(1000, update_clock)
 
-# Configuração da interface gráfica
 root = tk.Tk()
 root.title("Relógio Digital Complexo")
 
@@ -44,10 +40,11 @@ tk.Label(root, textvariable=ny_time, font=("Helvetica", 14)).pack()
 tk.Label(root, textvariable=london_time, font=("Helvetica", 14)).pack()
 tk.Label(root, textvariable=tokyo_time, font=("Helvetica", 14)).pack()
 
-# Exibir alinhamento dos planetas
 alignment = get_planet_alignment()
 tk.Label(root, text=f"Alinhamento dos planetas: {alignment}", font=("Helvetica", 12), fg="blue").pack()
 
-# Iniciar o relógio
 update_clock()
 root.mainloop()
+# Obs: A parte do alinhamento dos planetas ainda não funciona direito.
+# O site que usei não tem uma API própria, então preciso pesquisar uma forma melhor
+# de puxar esses dados e ligar isso ao relógio.
