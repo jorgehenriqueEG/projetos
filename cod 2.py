@@ -6,7 +6,6 @@ def is_prime(number):
             return False
     return True
 
-# Testando o verificador de número primo
 num = int(input("Digite um número para verificar se é primo: "))
 if is_prime(num):
     print(f"{num} é um número primo.")
