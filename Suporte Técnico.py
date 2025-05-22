@@ -28,7 +28,6 @@ class SuporteTecnico:
                 print(f"   Duração Estimada: {suporte['duracao_estimada']}")
                 print("-" * 30)
 
-# Exemplo de uso
 if __name__ == "__main__":
     suporte_tecnico = SuporteTecnico()
     suporte_tecnico.adicionar_suporte("Configuração de impressora", 30)
