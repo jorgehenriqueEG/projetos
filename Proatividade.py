@@ -1,5 +1,4 @@
-# Proatividade.py
-# Este script pode ser usado como base para implementar funcionalidades relacionadas à proatividade.
+
 
 def exibir_mensagem_proatividade():
     """
