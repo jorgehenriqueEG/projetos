@@ -1,5 +1,3 @@
-# Um exemplo simples de Inteligência Artificial: um chatbot básico
-
 def chatbot():
     print("Olá! Eu sou um chatbot simples. Como posso ajudar você hoje?")
     while True:
