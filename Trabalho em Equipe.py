@@ -1,6 +1,3 @@
-# Trabalho em Equipe
-# Este programa é um exemplo de colaboração em equipe para resolver problemas.
-
 def dividir_tarefas(tarefas, membros):
     """
     Divide as tarefas igualmente entre os membros da equipe.
@@ -25,7 +22,6 @@ def exibir_distribuicao(distribuicao):
     for membro, tarefas in distribuicao.items():
         print(f"{membro}: {', '.join(tarefas)}")
 
-# Exemplo de uso
 if __name__ == "__main__":
     tarefas = ["Planejar", "Desenvolver", "Testar", "Documentar", "Revisar"]
     membros = ["Alice", "Bob", "Carlos"]
