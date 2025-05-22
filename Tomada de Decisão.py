@@ -1,4 +1,3 @@
-# Tomada de Decisão
 
 def tomada_de_decisao(criterios):
     """
@@ -13,11 +12,10 @@ def tomada_de_decisao(criterios):
         pontuacao_final += peso * valor
     return pontuacao_final
 
-# Exemplo de uso
 if __name__ == "__main__":
     criterios = [
-        ("Custo", 0.4, 7),  # Peso 40%, valor 7
-        ("Qualidade", 0.6, 9)  # Peso 60%, valor 9
+        ("Custo", 0.4, 7),  
+        ("Qualidade", 0.6, 9)  
     ]
     resultado = tomada_de_decisao(criterios)
     print(f"A pontuação final para a decisão é: {resultado}")
