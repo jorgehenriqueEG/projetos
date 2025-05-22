@@ -1,5 +1,3 @@
-# Comunicação Eficaz
-# Este programa pode ser usado como base para explorar conceitos de comunicação eficaz.
 
 def comunicar_eficazmente(mensagem, destinatario):
     """
@@ -17,7 +15,6 @@ def comunicar_eficazmente(mensagem, destinatario):
     print(f"Mensagem: {mensagem}")
     print("Mensagem enviada com sucesso!")
 
-# Exemplo de uso
 if __name__ == "__main__":
     mensagem = input("Digite a mensagem que deseja enviar: ")
     destinatario = input("Digite o nome do destinatário: ")
