@@ -1,12 +1,9 @@
-# Resolução de Problemas
-
 def resolver_problema(problema):
     """
     Função genérica para resolver problemas.
     Substitua esta lógica com a solução específica para o problema.
     """
     try:
-        # Lógica para resolver o problema
         print(f"Resolvendo o problema: {problema}")
         solucao = "Solução encontrada"
         return solucao
